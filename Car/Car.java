@@ -1,10 +1,13 @@
 public class Car {
 	
 	private String make;
-//	public abstract void start();
 	
 	public void sound() {
 		System.out.println("roar");
+	}
+	
+	public void start() {
+		// nada
 	}
 
 	public void setMake(String make){
@@ -23,11 +26,11 @@ public class Car {
 			@Override
 			public void start() {
 				batteryPower -= 100;
-				System.out.println("okay");
+				System.out.println("started");
 			}
 		};
 		
-//		int x = Hybrid.batteryPower; //doesn't work bc cant access batteryPower
+//		int x = Hybrid.batteryPower; // doesn't work bc cant access batteryPower
 		
 		Hybrid.start(); //works!
 	}
